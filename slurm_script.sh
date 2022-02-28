@@ -3,8 +3,7 @@
 #SBATCH --nodes=1                       # Use 1 node
 #SBATCH --job-name=talha_test           # The name for our job
 #SBATCH --mem=1G                        # Default memory per CPU is 3GB.
-#SBATCH --partition=smallmem                 # We want to use a node with a GPU
-#SBATCH --gres=gpu:1                    # We need one GPU
+#SBATCH --partition=smallmem            # We want to use a node with a GPU
 #SBATCH --mail-user=talha.naveed@nmbu.no    # Email me when job is done.
 #SBATCH --mail-type=ALL                 # Please e-mail me about all messages regarding this job
 #SBATCH --output=talha-test-%A_%a.out   # The output from the file will be stored in a file with this name
